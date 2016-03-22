@@ -73,6 +73,7 @@ public class ReadQuery {
                 player.setPlayerID(this.results.getInt("playerID"));
                 player.setPlayerName(this.results.getString("playerName"));
                 player.setPlayerTeam(this.results.getString("playerTeam"));
+                player.setPlayerPosition(this.results.getString("playerPosition"));
                 player.setWHIP(this.results.getInt("WHIP"));
                 player.setWAR(this.results.getInt("WAR"));
                 player.setOPS(this.results.getInt("OPS"));
