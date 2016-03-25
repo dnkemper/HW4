@@ -4,14 +4,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add A New Player</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <link rel="stylesheet" type="text/css" href="./stylesheet.css"/>
 
     </head>
     <body>
-        <h1>Add A New Player</h1>
-        
+        <h1>Add A New Player</h1>    
         <form name="addForm" action="addPlayer" method="get">
-            
+            <fieldset> <legend>Our Newest Addition to the<br>Roster</legend></fieldset> 
             <label>Player Name:</label>
             <input type="text" name="name" value="" />
             <br>
@@ -32,8 +31,9 @@
             <br>
             <label>Games:</label>
             <input type="text" name="games" value="" />
-            <br> 
+            <br> <br>
             <input type="submit" name="submit" value="Submit" />
+            <br><br> <br><br><a href="http://msci3300-s1606.cloudapp.net:8080/playersApp/read"> Back to Players table </a><br><br>
         </form>
         
     </body>
