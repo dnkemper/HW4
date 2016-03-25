@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JTextField;
 import model.Players;
 
 public class ReadQuery {
@@ -59,11 +60,23 @@ public class ReadQuery {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
 }
-    
     public String getHTMLtable(){
         
         String table = "";
         
+        table += "<table>";
+        
+        table += "<tr>";
+                table += "<th>Player ID</th>";
+                table += "<th>Player Name</th>";
+                table += "<th>Player Team</th>";
+                table += "<th>Player Position</th>";
+                table += "<th>WHIP</th>";
+                table += "<th>WAR</th>";
+                table += "<th>OPS</th>";
+                table += "<th>Games</th>";
+                table += "<th>  </th>";
+                table += "</tr>";
         
         try {
             while(this.results.next()){
