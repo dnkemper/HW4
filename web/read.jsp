@@ -4,18 +4,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Players Page</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-
-    </head>
-    
-    <% String table = (String) request.getAttribute("table"); %>
-    <body>
+        <link rel="stylesheet" href="./stylesheet.css" type="text/css"/>
         <h1>Danielle's Favorite Baseball Players</h1>
+    </head>
+        <body>
+            <div id="readtable">
+    <% String table = (String) request.getAttribute("table"); %>
+
         <%= table %>
-        
-        <br><br>
-        
-        <a href ="add">Add a New Player</a>
-        
+            </div>
+        <br><br><br>
+<p class="text_line"> &nbsp;</p>
+<footer><p><a href ="add">Add a New Player</a></p> </footer>
+             
     </body>
 </html>
