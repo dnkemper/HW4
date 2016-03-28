@@ -1,10 +1,10 @@
 .wrap{ 
     text-align:center; 
     width:100%; margin:0 auto; 
-    border: 1px solid black; 
+    border: 3px solid white; 
     margin-top:25px;}
 .navcontainer {
-	padding: 5px 0 7px 5px;
+	padding: 10px 10px 10px 10px;
 	width: 100%;
 	line-height: 1.75;
 	background-color: #F08080;
@@ -17,7 +17,7 @@
 ul.navlist{
 	display: block;
 	list-style-type: none;
-	margin: 0 auto;
+	margin: auto;
 	padding:0px;
 }
 ul.navlist li{
@@ -27,7 +27,7 @@ ul.navlist li{
 	text-align:center;
 	font-variant:small-caps;
 	padding:1px;
-	width: 200px;
+	width: 21%;
 	margin-right: 30px;
 	border: 2px solid #fff;
 	background-color: #696969;
@@ -75,8 +75,7 @@ color: #EC9FCD;
     float:left;
     padding: auto;
     margin-left: 250px;
-    font-size: 38px;
-    
+    font-size: 40px;
 }
 body{
     text-align: center; 
