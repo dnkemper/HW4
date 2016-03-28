@@ -1,0 +1,11 @@
+            <div class="header"> <!-- headerdiv-->
+	
+		<div class="headerImg"> <!-- header image div-->
+				<img src="includes/logo.jpg"/>
+		</div> <!-- close header image div-->
+		
+		<div class="headerText"> <!-- header text div-->
+			<h1> Welcome to Software Design HW 6 </h1>
+		</div> <!-- close header text div-->
+		<br clear="all">
+            </div> <!-- close header div-->
