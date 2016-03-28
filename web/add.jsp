@@ -8,6 +8,14 @@
 
     </head>
     <body>
+        <div class="wrap"> <!--div to hold all other divs -->
+
+        <%@ include file="includes/header.jsp" %>
+        
+        <%@ include file="includes/menu.jsp" %>
+           
+        <div class="main">
+            
         <h1>Add A New Player</h1>    
         <form name="addForm" action="addPlayer" method="get">
             <fieldset> <legend>Our Newest Addition to the<br>Roster</legend></fieldset> 
@@ -35,6 +43,9 @@
             <input type="submit" name="submit" value="Submit" />
             <br><br> <br><br><a href="http://msci3300-s1606.cloudapp.net:8080/playersApp/read"> Back to Players table </a><br><br>
         </form>
-        
+ </div>
+
+<%@ include file="includes/footer.jsp" %>
+</div> <!--close the wrap div -->   
     </body>
 </html>
