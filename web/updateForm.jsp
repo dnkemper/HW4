@@ -41,7 +41,6 @@
             <label>Games:</label>
             <input type="text" name="games" value="<%= player.getGames()%>"/>
             <br> <br>
-            <input type="reset" name="reset" value="Clear" />
             <input type="submit" name="submit" value="Update" />
             <br><br> <br><br><a href="http://msci3300-s1606.cloudapp.net:8080/playersApp/read"> Back to Players table </a><br><br>
         </form>

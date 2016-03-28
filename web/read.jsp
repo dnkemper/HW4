@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Players Page</title>
         <link rel="stylesheet" href="./stylesheet.css" type="text/css"/>
-        <h1>Danielle's Favorite Baseball Players</h1>
+      
     </head>
         <% String table = (String) request.getAttribute("table"); %>
         
@@ -18,7 +18,8 @@
         <%@ include file="includes/menu.jsp" %>
            
         <div class="main">
-
+  <h1>Danielle's Favorite Baseball Players</h1>
+  <br><br>
 
         <%= table %>
             </div>

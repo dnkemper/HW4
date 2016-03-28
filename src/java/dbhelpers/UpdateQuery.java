@@ -1,4 +1,3 @@
-
 package dbhelpers;
 
 import java.io.IOException;
@@ -15,6 +14,7 @@ import model.Players;
 public class UpdateQuery {
     
     private Connection conn;
+    
     public UpdateQuery(){
      Properties props = new Properties();
         InputStream instr = getClass().getResourceAsStream("dbConn.properties");
@@ -49,7 +49,7 @@ public class UpdateQuery {
     public void doUpdate (Players player){
         
         try {
-            String query = "UPDATE players SET playerName = ?, playerTeam = ?, playerPosition = ?, WHIP = ?, WAR = ?, OPS = ?, games = ?, WHERE playerID = ?";
+            String query = "UPDATE players SET playerName = ?, playerTeam = ?, playerPosition = ?, WHIP = ?, WAR = ?, OPS = ?, games = ? WHERE playerID = ?";
             
             PreparedStatement ps = conn.prepareStatement(query);
             

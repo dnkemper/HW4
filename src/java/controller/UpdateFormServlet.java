@@ -89,6 +89,7 @@ public class UpdateFormServlet extends HttpServlet {
         
         //pass player and control to updateForm.jsp
         request.setAttribute("player", player);
+        
         String url = "/updateForm.jsp";
         
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
