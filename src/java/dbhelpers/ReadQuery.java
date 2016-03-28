@@ -10,7 +10,6 @@ import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JTextField;
 import model.Players;
 
 public class ReadQuery {
@@ -52,7 +51,7 @@ public class ReadQuery {
     
     public void doRead(){
         try {
-            String query = "Select * from players";
+            String query = "SELECT * FROM players ORDER BY playerID ASC";
             
             PreparedStatement ps = conn.prepareStatement(query);
             this.results = ps.executeQuery();
@@ -126,7 +125,7 @@ public class ReadQuery {
                 table += "</td>";
                 
                 table += "<td>";
-                table += "<a href=delete?playerID=" + player.getPlayerID() + "> Delete </a>";
+                table += "<a href=update?playerID=" + player.getPlayerID()+ "> Update </a>" + "<a href=delete?playerID=" + player.getPlayerID() + "> Delete </a>";
                 table += "</td>";
                 table += "</tr>";                                                                         
             }
